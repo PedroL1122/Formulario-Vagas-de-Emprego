@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página -->
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+
+        <!-- Titulo -->
+        <div>
+            <h1 id="titulo">Vagas de Emprego|Candidate-se</h1>
+            <hr>
+            <br>
+        </div>
+
+       
+        <form>
+
+            
+                <!-- nome do candidato -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- sobrenome do candidato -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+       
+            <!-- Email do candidato -->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input  required type="email" name="email" id="email" >
+            </div>
+
+            
+        <!-- Gênero do candidato -->
+                <label><strong>Gênero</strong></label>
+                <label>
+                    <div class="gender-group" required>
+                    <input type="radio" name="questionario" value="male" name="gender" checked>Masculino
+                </label>
+                <label>
+                    <input type="radio" name="questionario" value="female" name="gender" >Feminino
+                </label>
+                <label>
+                    <input type="radio" name="questionario" value="Outros" name="gender" >Outros
+                </label>
+                <label>
+                    <input type="radio" name="questionario" value="none" name="gender" checked> Prefiro não dizer
+                </label>
+                   
+            </div>
+
+                 <!-- Nivel de escolaridade -->
+            <div class="campo">
+                <label for="senioridade"><strong>Seu nivel de escolaridade:</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Ensino fundamental</option>
+                  <option>Ensino medio</option>
+                  <option>Superior</option>
+                  <option>Pós-graduação</option>
+                  <option>Mestrado</option>
+                </select>
+
+                    <!-- Habilidades do candidato -->
+                    <div class="grupo"id="check">
+                        <label><strong>Selecione as abilidades que você possui:</strong></label><br><br>
+                        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="Excel">
+                        <label for="abilidades1"> Excel</label>
+                        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Inglês">
+                        <label for="abilidades2"> Inglês</label>
+                        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="word">
+                        <label for="abilidades3"> Word</label>
+                        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="powerpoint">
+                        <label for="abilidades4"> Powerpoint</label>
+                        <input type="checkbox" id="tecnologia5" name="tecnologia5" value="bancodedados">
+                        <label for="abilidades5"> Banco de dados</label>
+                        <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Administração">
+                        <label for="abilidades6"> Administração</label>
+                    </div>
+<!-- Estado da pessoa -->
+            </div>
+            <div class="campo">
+            <label for="UF"><strong>Qual seu estado?</strong></label>
+            <select id="UF" name="UF">
+                <option selected disabled value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+<!-- jornada desejada do candidato -->
+        <div class="campo">
+            <label for="jornada"><strong>Jornada</strong></label>
+            <select id="jornada" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Período Integral</option>
+              <option>Parcial manhãs</option>
+              <option>Parcial tardes</option>
+              <option>Parcial noite</option>
+            </select>
+        </div>
+<!-- botão para enviar o formulario -->
+              <button class="botao" type="submit">CONCLUÍDO</button>
+
+        </form>
+
+    </body>
+
+</html>
